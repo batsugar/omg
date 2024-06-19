@@ -13,18 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/test', function () {
+//     return view('test');
+// });
+
+// Route::get('/test2', function () {
+//     return [
+//         'msg'=> "test",
+//     ];
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
 });
-
-Route::get('/test', function () {
-    return view('test');
-});
-
-Route::get('/test2', function () {
-    return [
-        'msg'=> "test",
-    ];
+Route::get('/second', function () {
+    return view('pages.second');
 });
 
 
